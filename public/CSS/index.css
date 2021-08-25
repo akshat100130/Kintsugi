@@ -9,7 +9,8 @@ body{
 
 /* #####################
    ######## NAVBAR 
-   #####################*/
+   #####################
+*/
 
 #n-bar .navbar-brand img{
     margin-top: 5px;
@@ -35,10 +36,24 @@ body{
     /* border-bottom: 2px solid white; */
 }
 
-/* ############### FACE */
+#n-bar .nav_btn{
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: transparent;
+    width: 160px;
+    height: 35px;
+}
+
+/*  #########################
+    ############### FACE
+    ############################
+*/
 
 #face{
-    background-image: url("../images/face_of_the_website.png");
+    background-image: url("../images/index/face_of_the_website.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -76,10 +91,12 @@ body{
 
 #face .cont .b_group{
     margin-right: -80px;
+  
 }
 
 #face .cont .b_therapist{
     margin-left: -80px;
+    cursor: pointer;
 }
 
 #face .cont .b_group button{
@@ -92,6 +109,7 @@ body{
     border-radius: 6px;
     font-weight: 500;
     font-size: 1.1em;
+    cursor: pointer;
 }
 
 #face .cont .b_therapist button{
@@ -119,6 +137,11 @@ body{
     height: 35px;
     width: 35px;
 }
+
+/*  #########################
+    ###############SECTION 1
+    ############################
+*/
 
 #mkc1{
     margin-top: -15vh;
@@ -157,9 +180,11 @@ body{
     width: 90%;
 }
 
-/*  #########################
+/*  
+    #########################
     ###############SECTION 2 
-    ############################*/
+    ############################
+*/
 
 #mkc2{
     padding: 6em 5em;
@@ -197,7 +222,8 @@ body{
     font-size: 1.1em;
 }
 
-/*  #########################
+/*  
+    #########################
     ###############SECTION 3
     ############################
 */
@@ -230,8 +256,9 @@ body{
     font-size: 26px;
 }
 
-/*  #########################
-    ###############SECTION 3
+/*  
+    #########################
+    ###############SECTION 4
     ############################
 */
 
@@ -245,6 +272,11 @@ body{
 #mkc4 .card img{
     border-radius: 0px;
 }
+
+#mkc4 .card .card-text{
+    color: var(--text);
+}
+
 #mkc4 h1{
     color: var(--heading);
     font-size: 45px;
@@ -265,4 +297,58 @@ body{
 
 .high{
     color: #79ACEC;
+}
+
+/*
+    #########################
+    ############### FOOTER
+    ############################
+*/
+
+#footer {
+    padding: 6em 5em 1em 5em;
+    background-color: var(--back);
+    color: var(--text);
+}
+
+#footer img{
+    height: 75%;
+    width: 75%;
+}
+
+#footer .footer_links ul{
+    margin-bottom: 1em;
+}
+
+#footer .footer_links li{
+    list-style: none;
+    margin-bottom: 1em;
+}
+#footer .footer_links a{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 16px;
+}
+
+#footer .footer_links a:hover{
+    color: var(--heading);
+}
+
+#footer hr{
+    height: 1.5px;
+}
+
+#footer .f_copy p{
+    font-size: 16px;
+}
+
+#footer .f_social{
+    /* justify-content: right; */
+    text-align: right;
+}
+
+#footer .f_social img{
+    height: 30px;
+    width: 30px;
+    margin: 0 0.5em;
 }
