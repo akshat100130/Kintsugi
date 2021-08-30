@@ -56,9 +56,10 @@ body{
     height: 35px;
 }
 
-/*  #########################
-    ############### FACE
-    ############################
+/* 
+   #####################
+   ######## FACE 
+   #####################
 */
 
 #face{
@@ -75,7 +76,7 @@ body{
 
     color: #FFFFFF;
 
-    padding: 0 12em;
+    padding: 0 8em;
     position: relative;
     top: -15vh;
     z-index: -1;
@@ -84,69 +85,20 @@ body{
 
 #face .cont h1{
     font-weight: 700;
-    font-size: 6em;
-    letter-spacing: 17px;
+    font-size: 4.8em;
+    letter-spacing: 15px;
 }
 
 #face .cont p{
-    margin-top: -15px;
+    margin-top: -5px;
     font-weight: 400;
     font-size: 1.5em;
 }
 
-#face .row{
-    margin-top: 2em;
+#face .caret{
+    position: absolute;
+    bottom: 10%;
 }
-
-#face .cont .b_group{
-    margin-right: -80px;
-  
-}
-
-#face .cont .b_therapist{
-    margin-left: -80px;
-    cursor: pointer;
-}
-
-#face .cont .b_group button{
-    width: 180px;
-    height: 45px;
-    background-color: transparent;
-    color: white;
-    border: 3px solid white;
-    outline: none;
-    border-radius: 6px;
-    font-weight: 500;
-    font-size: 1.1em;
-    cursor: pointer;
-}
-
-#face .cont .b_therapist button{
-    width: 180px;
-    height: 45px;
-    background-color: #79ACEC;
-    color: white;
-    border: 3px solid #79ACEC;
-    outline: none;
-    border-radius: 6px;
-    font-weight: 500;
-    font-size: 1.1em;
-}
-
-#face .cont .icon_row{
-    margin-top: 2em;
-}
-
-#face .cont .icon_row .icon_svg{
-    padding: 0 1em;
-    text-decoration: none;
-}
-
-#face .cont .icon_row .icon_svg img{
-    height: 35px;
-    width: 35px;
-}
-
 /*  
     #########################
     ###############SECTION 1
@@ -192,64 +144,28 @@ body{
 
 /*  
     #########################
-    ###############SECTION 2 
+    ###############SECTION 2
     ############################
 */
 
 #mkc2{
-    padding: 6em 5em;
+    padding: 3em 10em 5em 10em;
     background-color: var(--back);
 }
 
-#mkc2 .left-ka-dabba{
-    text-align: right;
-}
-
-#mkc2 .left-ka-dabba h1{
-    color: var(--heading);
-    font-size: 45px;
-    width: 100%;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-}
-
-#mkc2 .left-ka-dabba p{
-    color: var(--text);
-    width: 100%;
-    font-size: 20px;
-    margin-bottom: 2.5em;
-}
-
-#mkc2 .baap_ka_button button{
-    width: 180px;
-    height: 45px;
-    background-color: transparent;
-    color: #79ACEC;
-    border: 3px solid #79ACEC;
-    outline: none;
-    border-radius: 6px;
-    font-weight: 500;
-    font-size: 1.1em;
-}
-
-/*  
-    #########################
-    ###############SECTION 3
-    ############################
-*/
-
-#mkc3{
-    padding: 6em 5em;
+#mkc2 h1{
     text-align: center;
-}
-
-#mkc3 h1{
     color: var(--heading);
     font-size: 45px;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
-#mkc3 .card-img-top{
+#mkc2 .card{
+    border: 1.5px solid #949494;
+
+}
+
+#mkc2 .card-img-top{
     height: 95%;
     width: 95%;
 
@@ -261,54 +177,84 @@ body{
     border-radius: 4px;
 }
 
-#mkc3 .card-title{
+#mkc2 .card-title{
     color: var(--heading);
-    font-size: 26px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#mkc2 .doc_rating{
+    color: #FFCE4B;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#mkc2 .doc_spe{
+    color: var(--text);
+    font-size: 12px;
+}
+
+#mkc2 .doc_detail p{
+    color: var(--text);
+    font-size: 16px;
+}
+
+#mkc2 .doc_detail img{
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    margin-top: -5px;
+}
+
+#mkc2 .btn-primary{
+    color: white;
+    background-color: #79ACEC;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    outline: none;
 }
 
 /*  
     #########################
-    ###############SECTION 4
+    ###############SECTION 3 
     ############################
 */
 
-#mkc4{
+#mkc3{
     padding: 6em 5em;
-    text-align: center;
-}
-#mkc4 .card{
-    border: 0px;
-}
-#mkc4 .card img{
-    border-radius: 0px;
 }
 
-#mkc4 .card .card-text{
-    color: var(--text);
+#mkc3 .left-ka-dabba{
+    text-align: right;
 }
 
-#mkc4 h1{
+#mkc3 .left-ka-dabba h1{
     color: var(--heading);
     font-size: 45px;
-    margin-bottom: 1.5em;
+    width: 100%;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
 
-#mkc4 .container{
-    text-align: left;
+#mkc3 .left-ka-dabba p{
+    color: var(--text);
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 2.5em;
 }
 
-#mkc4 .card-img-top img{
-    border-radius: 0px;
-}
-#mkc4 .card-title{
-    color: var(--heading);
-    font-size: 26px;
-}
-
-.high{
+#mkc3 .baap_ka_button button{
+    width: 180px;
+    height: 45px;
+    background-color: transparent;
     color: #79ACEC;
+    border: 3px solid #79ACEC;
+    outline: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 1.1em;
 }
-
 /*
     #########################
     ############### FOOTER
