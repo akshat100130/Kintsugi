@@ -22,17 +22,21 @@
 
 <body>
     <section id="n-bar">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg nav-max">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="./public/images/index/Artboard 8.svg" alt="Kintsugi">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <div class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <div class="container ham" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                      </div>
+                    </div>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav ">
@@ -223,7 +227,11 @@
             </div>
         </div>
     </section>
-
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+        </script>
 </body>
 
 </html>

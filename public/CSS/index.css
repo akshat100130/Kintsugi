@@ -29,26 +29,20 @@ body{
 
 #n-bar .nav_links a{
     /* margin-right: 1.5em; */
-    /* padding-right: 1.5em; */
+    padding-right: 2em; */
     text-decoration: none;
     color: white;
     font-weight: 600;
     font-size: 14px;
+    overflow: hidden;
+    white-space : nowrap;
 }
 
-#n-bar .active{
-    /* border-bottom: 4px solid white; */
-    /* text-decoration: underline; */
-    /* height: 2px; */
-    /* border-radius: 0; */
-    /* width: 60%; */
-    /* padding-left: 0%; */
-}
 
 #n-bar .nav_btn{
     color: white;
     border: 1.5px solid white;
-    border-radius: 6px;
+    border-radius: 5px;
     font-weight: 600;
     font-size: 14px;
     background-color: transparent;
@@ -361,4 +355,39 @@ body{
     height: 30px;
     width: 30px;
     margin: 0 0.5em;
+}
+
+
+/* --------------------------- NAVBAR ICON ------------------------------*/
+  .bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: #FFFFFF;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 2px;;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -6px);
+  }
+  .ham{
+      display: inline-block;
+      cursor: pointer;
+  }
+
+  /*--------------------- Media Queries ------------------------------*/
+@media screen and (max-width: 760px){ 
+    .nav-max{
+        background-color: #000;
+    }
+    
 }
