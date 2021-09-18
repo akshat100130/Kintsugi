@@ -1,82 +1,65 @@
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import BookAppointment from './components/bookingPage';
-import Home from './components/homePage';
-import Confirmation from './components/confirmationPage';
-import Contact from './components/contactPage';
-import Support from './components/supportGroupPage';
-import Volunteer from './components/volunteerPage';
-import SignInPage from './components/signInPage';
-import SignUpPage from './components/signUpPage';
-import { COGNITO } from "./configs/aws";
-import Amplify, { Auth } from 'aws-amplify';
+import React, { Component } from 'react';
+import UserScreen from './components/userScreen.jsx';
+import NonUserScreen from './components/nonUserScreen.jsx';
+import fire from './firebase/config.js';
+import {createProfile} from './firebase/functions.js';
 
-Amplify.configure({
-    aws_cognito_region: COGNITO.REGION,
-    aws_user_pools_id: COGNITO.USER_POOL_ID,
-    aws_user_pools_web_client_id: COGNITO.APP_CLIENT_ID,
-});
+class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {user: null, type: 'landing'};
+        this.authListener = this.authListener.bind(this);
+        this.createProfile = this.createProfile.bind(this);
+    }
 
-function About() {
-  return <h2>About</h2>;
+    componentDidMount() {
+        this.authListener();
+    }
+
+    createProfile(){
+        createProfile().then(res=>{
+            if (res) {
+                window.location.href = window.location.href.substring(0, window.location.href.indexOf("/", 9))
+                this.setState({user: res, type: 'user'})
+            } else {
+                window.location.href = window.location.href.substring(0, window.location.href.indexOf("/", 9))
+                this.setState({user: null, type: 'landing'});
+            }
+        })
+    }
+
+    authListener() {
+        fire.auth().onAuthStateChanged((user) => {
+            if (user) {
+                if (fire.auth().isSignInWithEmailLink(window.location.href)){
+                    this.setState({user: user, type: 'verification'}, this.createProfile);
+                } else this.setState({user: user, type: 'user'})
+            } else {
+                if (fire.auth().isSignInWithEmailLink(window.location.href)){
+                    window.location.href = window.location.href.substring(0, window.location.href.indexOf("/", 9))
+                }
+                this.setState({user: null, type: 'landing'});
+            }
+        });
+    }
+
+    render() {
+        if (this.state.type=='landing'){
+            return <NonUserScreen />
+        } else if (this.state.type=='user'){
+            return (this.state.user.emailVerified) ? <UserScreen /> : <NonUserScreen />
+        } else if (this.state.type=='verification'){
+            return <div style={{width: "100vw",
+                                height: "100vh",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                fontFamily: "Zilla Slab",
+                                fontColor: "black",
+                                fontWeight: "600px",
+                                fontSize: "70px",
+                                background: "#F48D8D"}}>Verifying...</div>
+        }
+    }
 }
-
-function Users() {
-  return <h2>Users</h2>;
-}
-
-function Dashboard() {
-  return <h2>This is the Dashboard</h2>;
-}
-
-function App() {
-  return (
-    <div className="App">
-      <Router>
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/signup">
-            <SignUpPage />
-          </Route>
-          <Route path="/signin">
-            <SignInPage />
-          </Route>
-          <Route path="/volunteer">
-            <Volunteer />
-          </Route>
-          <Route path="/supportgroups">
-            <Support />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/confirmation">
-            <Confirmation />
-          </Route>
-          <Route path="/book">
-            <BookAppointment />
-          </Route>
-          <Route path="/about">
-            <SignInPage />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-    </Router>
-    </div>
-  );
-}
-
 export default App;
