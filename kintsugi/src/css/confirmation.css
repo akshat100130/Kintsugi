@@ -1,0 +1,23 @@
+#confirmation{
+    /* margin-top: -15vh; */
+    padding: 6em 5em;
+    /* background-color: var(--back); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#confirmation .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 2.5em 1em;
+    width: 90%;
+    background-color: var(--back);
+    margin-top:-55vh;
+    border-radius: 10px;   
+}
+#confirmation .container h1{
+    font-weight: 400;
+    font-size: 3em;
+}

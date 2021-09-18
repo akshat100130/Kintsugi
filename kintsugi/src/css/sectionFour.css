@@ -1,0 +1,36 @@
+#mkc4{
+    padding: 6em 5em;
+    text-align: center;
+}
+#mkc4 .card{
+    border: 0px;
+}
+#mkc4 .card img{
+    border-radius: 0px;
+}
+
+#mkc4 .card .card-text{
+    color: var(--text);
+}
+
+#mkc4 h1{
+    color: var(--heading);
+    font-size: 45px;
+    margin-bottom: 1.5em;
+}
+
+#mkc4 .container{
+    text-align: left;
+}
+
+#mkc4 .card-img-top img{
+    border-radius: 0px;
+}
+#mkc4 .card-title{
+    color: var(--heading);
+    font-size: 26px;
+}
+
+.high{
+    color: #79ACEC;
+}

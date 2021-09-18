@@ -1,0 +1,54 @@
+.card{
+    border: 1.5px solid #949494;
+
+}
+
+.card-img-top{
+    height: 95%;
+    width: 95%;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+
+    border-radius: 4px;
+}
+
+.card-title{
+    color: var(--heading);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.doc_rating{
+    color: #FFCE4B;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.doc_spe{
+    color: var(--text);
+    font-size: 12px;
+}
+
+.doc_detail p{
+    color: var(--text);
+    font-size: 16px;
+}
+
+.doc_detail img{
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    margin-top: -5px;
+}
+
+.btn-primary{
+    color: white;
+    background-color: #79ACEC;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}

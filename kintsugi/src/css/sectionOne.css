@@ -1,0 +1,76 @@
+#mkc1{
+    margin-top: -15vh;
+    padding: 6em 5em;
+}
+
+#mkc1 .left-ka-dabba{
+    text-align: left;
+}
+
+#mkc1 .left-ka-dabba h1{
+    color: var(--heading);
+    font-size: 45px;
+    width: 95%;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+#mkc1 .left-ka-dabba p{
+    color: var(--text);
+    width: 85%;
+    font-size: 20px;
+    margin-bottom: 2.5em;
+}
+
+#mkc1 .baap_ka_button button{
+    width: 180px;
+    height: 45px;
+    background-color: transparent;
+    color: #79ACEC;
+    border: 3px solid #79ACEC;
+    outline: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+#mkc1 .right-ka-dabba img{
+    height: 90%;
+    width: 90%;
+}
+
+#mkc2{
+    padding: 6em 5em;
+    background-color: var(--back);
+}
+
+#mkc2 .left-ka-dabba{
+    text-align: right;
+}
+
+#mkc2 .left-ka-dabba h1{
+    color: var(--heading);
+    font-size: 45px;
+    width: 100%;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+#mkc2 .left-ka-dabba p{
+    color: var(--text);
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 2.5em;
+}
+
+#mkc2 .baap_ka_button button{
+    width: 180px;
+    height: 45px;
+    background-color: transparent;
+    color: #79ACEC;
+    border: 3px solid #79ACEC;
+    outline: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 1.1em;
+}

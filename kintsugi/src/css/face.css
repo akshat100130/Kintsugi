@@ -1,0 +1,124 @@
+#face{
+    background-image: url("../images/face/face_of_the_website.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    padding: 0 12em;
+    position: relative;
+    top: -15vh;
+    z-index: -1;
+}
+
+#face .cont h1{
+    font-weight: 700;
+    font-size: 6em;
+    letter-spacing: 17px;
+}
+
+#face .cont p{
+    margin-top: -15px;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+#face .row{
+    margin-top: 2em;
+}
+
+#face .cont .b_group{
+    margin-right: -80px;
+  
+}
+
+#face .cont .b_therapist{
+    margin-left: -80px;
+    cursor: pointer;
+}
+
+#face .cont .b_group button{
+    width: 180px;
+    height: 45px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    outline: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+#face .cont .b_therapist button{
+    width: 180px;
+    height: 45px;
+    background-color: #79ACEC;
+    color: white;
+    border: 3px solid #79ACEC;
+    outline: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+#face .cont .icon_row{
+    margin-top: 2em;
+}
+
+#face .cont .icon_row .icon_svg{
+    padding: 0 1em;
+    text-decoration: none;
+}
+
+#face .cont .icon_row .icon_svg img{
+    height: 35px;
+    width: 35px;
+}
+
+/*Type 2 */
+
+#face2{
+    background-image: url("../images/face/face_of_the_website.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    padding: 0 8em;
+    position: relative;
+    top: -15vh;
+    z-index: -1;
+
+}
+
+#face2 .cont h1{
+    font-weight: 700;
+    font-size: 4.8em;
+    letter-spacing: 15px;
+}
+
+#face2 .cont p{
+    margin-top: -5px;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+#face2 .caret{
+    position: absolute;
+    bottom: 10%;
+}

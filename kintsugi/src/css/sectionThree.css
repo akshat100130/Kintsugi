@@ -1,0 +1,27 @@
+#mkc3{
+    padding: 6em 5em;
+    text-align: center;
+}
+
+#mkc3 h1{
+    color: var(--heading);
+    font-size: 45px;
+    margin-bottom: 1.5em;
+}
+
+#mkc3 .card-img-top{
+    height: 95%;
+    width: 95%;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+
+    border-radius: 4px;
+}
+
+#mkc3 .card-title{
+    color: var(--heading);
+    font-size: 26px;
+}

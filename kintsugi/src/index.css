@@ -1,0 +1,15 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
+:root{
+  --heading : #202138;
+  --text : #5F6368;
+  --back : #F5F9FF;
+}
+
+/*--------------------- Media Queries ------------------------------*/
+@media screen and (max-width: 760px){ 
+  .nav-max{
+      background-color: #000;
+  }
+}

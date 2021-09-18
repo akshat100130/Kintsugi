@@ -1,0 +1,11 @@
+#therapist{
+    padding: 3em 10em 5em 10em;
+    background-color: var(--back);
+}
+
+#therapist h1{
+    text-align: center;
+    color: var(--heading);
+    font-size: 45px;
+    margin-bottom: 1em;
+}
